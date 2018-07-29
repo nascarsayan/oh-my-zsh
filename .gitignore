@@ -1,7 +1,5 @@
 # custom files
-custom/
-!custom/plugins/example
-!custom/example.zsh
+custom/*tmux*
 
 # temp files directories
 cache/
