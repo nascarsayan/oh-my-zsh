@@ -1,10 +1,16 @@
 # Youtube-dl
-
 ytv() {
-	youtube-dl --config-location ~/.config/youtube-dl/video_playlist $1 ; rm -f yt_done.txt
+	youtube-dl --config-location ~/.config/youtube-dl/video $1 ; rm -f yt_done.txt
 }
 
 yta() {
+	youtube-dl --config-location ~/.config/youtube-dl/audio $1 ; rm -f yt_done.txt
+}
+ytvp() {
+	youtube-dl --config-location ~/.config/youtube-dl/video_playlist $1 ; rm -f yt_done.txt
+}
+
+ytap() {
 	youtube-dl --config-location ~/.config/youtube-dl/audio_playlist $1 ; rm -f yt_done.txt
 }
 
